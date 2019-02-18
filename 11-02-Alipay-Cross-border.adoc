@@ -30,7 +30,7 @@ currencies, which are relevant for _Alipay Cross-border_.
 .Payment Mode, Countries and Currencies
 [width="100%",cols="20%,80%",]
 |===
-|*Payment Mode* |link:#PaymentMethods_Overview_Wallet[Wallet]
+|*Payment Mode* |<<PaymentMethods_Overview_Wallet, Wallet>>
 |*Countries* |Worldwide
 |*Currencies* |AUD, CAD, CHF, DKK, EUR, GBP, HKD, JPY, KRW, NOK, NZD,
 SEK, SGD, THB, USD
@@ -49,32 +49,32 @@ responses.
 .2+|*Requests/Responses* | Format | XML
                          | Methods | POST, GET
 |*IPN Encodement*      2+| Please follow the instructions given at
-link:#GeneralPlatformFeatures_IPN_NotificatonExample_Alternative[Instant Payment Notification] to set up IPN.
+<<GeneralPlatformFeatures_IPN_NotificatonExample_Alternative, Instant Payment Notification>> to set up IPN.
 |===
 
 [#API_AlipayCross-border_TransactionTypes]
 ==== Transaction Types
 
 For transaction type details which are not given here look at 
-link:#AppendixB[Appendix B: Transaction Types].
+<<AppendixB, Appendix B: Transaction Types>>.
 
 [width="100%",cols="20%,40%,40%",options="header",]
 |===
 |Transaction Type |Description |Link to the sample
-|_debit_ |  a| link:#API_AlipayCross-border_Samples_General_debit[_debit_ samples]
+|_debit_ |  a| <<API_AlipayCross-border_Samples_General_debit, _debit_ samples>>
 
 Used with
-link:#API_AlipayCross-border_Samples_auto-debit_debit(with<periodic>)[auto-debit],
+<<API_AlipayCrossBorder_Samples_autoDebit_debit_withPeriodic, auto-debit>>,
 containing a <periodic>.
 
 |_refund-debit_ | 
-|link:#API_AlipayCross-border_Samples_General_refund-debit[_refund-debit_ samples]
+|<<API_AlipayCross-border_Samples_General_refund-debit, _refund-debit_ samples>>
 
 |_authorization-only_ |Used with auto-debit: Initiates the sign
 agreement between _Alipay cross-border_ and the consumer. a|
-link:#API_AlipayCross-border_Samples_auto-debit_authorization-only(Sign)][_authorization-only_ (sign) samples]
+<<API_AlipayCrossBorder_Samples_autoDebit_authorizationOnly_Sign, _authorization-only_ (sign) samples>>
 
-link:#API_AlipayCross-border_Samples_auto-debit_authorization-only(Unsign)[_authorization-only_ (unsign) samples]
+<<API_AlipayCrossBorder_Samples_autoDebit_authorizationOnly_Unsign, _authorization-only_ (unsign) samples>>
 |===
 
 [#AlipayCross-border_TestCredentials]
@@ -231,10 +231,10 @@ When Provider Parameter *connector.wap.autodetect* is set to _true_.
 entry_mode (HPP/EPP)
 |no ||Activates desktop layout. |Detects device type automatically
 |yes |mcommerce |Activates layout for mobile payment. |Activates layout for mobile payment.
-|yes |link:#API_Fields_Payment[other value] or no value |Every other value activates desktop layout. |Every other value activates desktop layout.
+|yes |<<API_Fields_Payment, other value>> or no value |Every other value activates desktop layout. |Every other value activates desktop layout.
 |===
 
-For further questions, please contact your link:#ContactUs[sales manager].
+For further questions, please contact your <<ContactUs, sales manager>>.
 
 [#API_AlipayCross-border_Features_auto-debit]
 ===== _auto-debit_
@@ -410,7 +410,7 @@ https://coderstoolbox.net/string/#!encoding=xml&action=decode&charset=us_ascii.
 [#API_AlipayCross-border_Samples_auto-debit]
 ===== _auto-debit_
 
-[#API_AlipayCross-border_Samples_auto-debit_authorization-only(Sign)]
+[#API_AlipayCrossBorder_Samples_autoDebit_authorizationOnly_Sign]
 ====== _authorization-only_ (Sign Agreement)
 
 ._authorization-only_ (Sign) Request (Successful)
@@ -461,7 +461,7 @@ https://coderstoolbox.net/string/#!encoding=xml&action=decode&charset=us_ascii.
 </payment>
 ----
 
-[#API_AlipayCross-border_Samples_auto-debit_debit(with<periodic>)]
+[#API_AlipayCrossBorder_Samples_autoDebit_debit_withPeriodic]
 ====== _debit_ (with <periodic>)
 
 ._debit_ Request (Successful)
@@ -542,7 +542,7 @@ https://coderstoolbox.net/string/#!encoding=xml&action=decode&charset=us_ascii.
 </payment>
 ----
 
-[#API_AlipayCross-border_Samples_auto-debit_authorization-only(Unsign)]
+[#API_AlipayCrossBorder_Samples_autoDebit_authorizationOnly_Unsign]
 ====== _authorization-only_ (Unsign Agreement)
 
 ._authorization-only_ (Unsign) Request (Successful)
