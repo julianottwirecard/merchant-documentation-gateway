@@ -1,7 +1,7 @@
 [#API_AlipayCrossBorder]
 === Alipay Cross-border
 
-image::images/11-02-Alipay-Cross-border/AlipayCrossborder_logo.jpg[Alipay Cross-border Logo,height=1]
+image::images/11-02-Alipay-Cross-border/AlipayCrossborder_logo.jpg[alt=Alipay Cross-border logo, width=200, align="right"]
 
 [#API_AlipayCrossBorder_Introduction]
 ==== Introduction
